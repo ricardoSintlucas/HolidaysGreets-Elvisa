@@ -1,6 +1,6 @@
 let cols, rows;
 let size = 12;
-let randomMod = 7;
+let randomMod = 20;
 let t = 0;
 let speed = 0.05;
 
@@ -8,7 +8,6 @@ var mySvg;
 
 function preload() {
   mySvg = loadImage("happyHolidays.svg", "svg");
-  bestWishes = loadImage("bestWishes.svg", "svg");
 }
 
 function setup() {
@@ -47,9 +46,7 @@ function draw() {
   imageMode(CENTER);
 
   // Scale the SVG images
-  let mySvgWidth = mySvg.width * 1.8; // Adjust the scale factor as needed
-  let mySvgHeight = mySvg.height * 1.8;
-  image(mySvg, width / 2, height / 2 - 20, mySvgWidth, mySvgHeight);
-
-  image(bestWishes, width / 2, height / 2 + 90);
+  let mySvgWidth = mySvg.width * 2; // Adjust the scale factor as needed
+  let mySvgHeight = mySvg.height * 2;
+  image(mySvg, width / 2, height / 2, mySvgWidth, mySvgHeight);
 }
