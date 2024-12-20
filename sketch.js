@@ -1,5 +1,5 @@
 let cols, rows;
-let size = 12;
+let size = 10;
 let randomMod = 20;
 let t = 0;
 let speed = 0.05;
@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(500, 500);
   cols = width / size;
   rows = height / size;
   randomMod = floor(random(2, randomMod));
@@ -46,7 +46,7 @@ function draw() {
   imageMode(CENTER);
 
   // Scale the SVG images
-  let mySvgWidth = mySvg.width * 2; // Adjust the scale factor as needed
-  let mySvgHeight = mySvg.height * 2;
+  let mySvgWidth = mySvg.width * 1.5; // Adjust the scale factor as needed
+  let mySvgHeight = mySvg.height * 1.5;
   image(mySvg, width / 2, height / 2, mySvgWidth, mySvgHeight);
 }
