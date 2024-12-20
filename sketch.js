@@ -1,6 +1,6 @@
 let cols, rows;
 let size = 10;
-let randomMod = 20;
+let randomMod = 31;
 let t = 0;
 let speed = 0.05;
 
@@ -29,13 +29,15 @@ function draw() {
       if (dfcMod == 0) {
         fill(255);
       } else if (dfcMod == 1) {
-        fill(0);
+        fill(255, 50);
       } else if (dfcMod == 2) {
         fill(255, 0, 0);
       } else if (dfcMod == 3) {
         fill(0, 107, 28);
+      } else if (dfcMod == 4) {
+        fill(255, 20);
       } else {
-        fill(255, 50);
+        fill(0);
       }
       noStroke();
       let ellipseSize = map(distFormCenter, 0, width / 2, size / 5, size);
